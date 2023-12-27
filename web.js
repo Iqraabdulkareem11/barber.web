@@ -1,4 +1,4 @@
-head=prompt("entre you name")
+head=prompt("enter your name")
 alert("welcome to Barber Website")
 console.log(head)
 document.getElementById('head').innerHTML=head
