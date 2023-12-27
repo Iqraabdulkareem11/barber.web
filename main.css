@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#navbar {
+    padding: 3px 25px;
+}
+
+ul li a {
+    color: white !important;
+}
+
+ul li a:hover {
+    transition: .4s !important;
+    color: #ce9c6b !important;
+}
+
+#logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+
+.home-page {
+    background-image: url('./bg_2.jpg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 100vh !important;
+    width: 100% !important;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 80px;
+}
+
+.home-page::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.45);
+    content: "";
+}
+
+.home-page h1 {
+    font-size: 7vw;
+    font-family: 'Dancing Script', cursive;
+    padding-left: 10px; 
+}
+
+span {
+    color: #ce9c6b;
+}
+
+#btn {
+    padding: 12px 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid #ce9c6b;
+    position: relative;
+    margin-top: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    outline: none !important;
+}
+
+.details {
+    width: 100%;
+    margin-top: 20px;
+    background-color: black;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .home-page h1 {
+        font-size: 5vw;
+        padding-left: 20px;
+    }
+
+    #btn {
+        margin-left: 20px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-page h1 {
+        font-size: 3vw;
+        padding-left: 50px;
+    }
+
+    #btn {
+        margin-left: 50px;
+    }
+}
